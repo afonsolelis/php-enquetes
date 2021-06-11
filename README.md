@@ -9,7 +9,7 @@ REQUISITOS
 
 DEFINIÇÕES
 1. CRUD completo em sistemas de enquete.
-2. Enquete deve ter títulom início e término com no mínimo três opções de votação.
+2. Enquete deve ter título de início e término com no mínimo três opções de votação.
 3. Na visualização index devem aparecer todas as enquetes,responsivas e utilizando flexbox.
 4. As enquetes finalizadas devem mostrar as opções desabilitadas.
 5. Mostrar em realtime o número de voto por opção.

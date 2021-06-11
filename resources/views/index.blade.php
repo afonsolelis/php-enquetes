@@ -13,10 +13,10 @@
             <tr>
                 <td>{{ $p->id }}</td>
                 <td>{{ $p->title }}</td>
-                <td>{{ ($p->status == 1)?'Ativado':'Desativado' }}</td>
-                <td><a href="poll/close/{{ $p->id }}" class="btn btn-danger">Fechar</a></td>
+                <td><span class="badge bg-secondary my-2">{{ ($p->status == 1)?'Ativado':'Desativado' }}</span></td>
+                <td><a href="poll/close/{{ $p->id }}" class="btn btn-secondary">Fechar</a></td>
                 <td><a href="poll/find/{{ $p->id }}" class="btn btn-primary">Editar</a></td>
-                <td><a href="poll/delete/{{ $p->id }}">Remover</a></td>
+                <td><a href="poll/delete/{{ $p->id }}" class="btn btn-danger">Remover</a></td>
             </tr>
             @empty
             <tr>

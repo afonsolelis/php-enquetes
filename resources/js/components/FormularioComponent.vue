@@ -2,17 +2,28 @@
     <div>
         <div class="form-group">
             <label for="">Titulo</label>
-            <input type="text" name="title" class="form-control"/>
+            <input type="text" name="title" required class="form-control"/>
         </div>
 
-        <div class="form-group">
-            <label for="">Data</label>
-            <input type="date" name="closes_at" class="form-control" />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Data Inicial</label>
+                    <input type="date" name="starts_at" required class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Data Final</label>
+                    <input type="date" name="closes_at" class="form-control" required />
+                </div>
+            </div>
         </div>
 
         <div class="form-group">
             <label>Descrição</label>
-            <textarea name="description" class="form-control"></textarea>
+            <textarea name="description" class="form-control" required></textarea>
         </div>
 
         <div class="row mb-3">
@@ -37,7 +48,6 @@ export default {
         return {
             opcoes: 3
         }
-
     }
 }
 </script>

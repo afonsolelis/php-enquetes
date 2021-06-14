@@ -17,6 +17,7 @@ class CreatePollTable extends Migration
             $table->id();
             $table->string("title");
             $table->string("description");
+            $table->dateTime("starts_at");
             $table->dateTime("closes_at");
             $table->integer("status");
             $table->softDeletes();

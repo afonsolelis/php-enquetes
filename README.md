@@ -9,7 +9,7 @@ REQUISITOS
 
 DEFINIÇÕES
 1. CRUD completo em sistemas de enquete.
-2. Enquete deve ter título de início e término com no mínimo três opções de votação.
+2. Enquete deve ter títulom início e término com no mínimo três opções de votação.
 3. Na visualização index devem aparecer todas as enquetes,responsivas e utilizando flexbox.
 4. As enquetes finalizadas devem mostrar as opções desabilitadas.
 5. Mostrar em realtime o número de voto por opção.
@@ -18,7 +18,7 @@ Fluxograma de trabalho:
 1. Instalação do Laravel e update do PHP através de documentação específica (https://laravel.com/docs/8.x);
 2. Instalação do composer para gerenciar pacotes (https://laravel.com/docs/4.2);
 3. Codificando CRUD (back com as especificações);
-4. Instalando bootstrap e vue.js para responsividade/flex displays(https://getbootstrap.com/docs/5.0/getting-started/introduction/)(https://vuejs.org/);
+4. Instalando bootstrap para responsividade/flex displays(https://getbootstrap.com/docs/5.0/getting-started/introduction/);
 5. Testes com serve aberto para identificar erros;
 6. Finalização do projeto.
 

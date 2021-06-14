@@ -24,13 +24,16 @@ class PollController extends Controller
     {
         $validated = $request->validate([
             'title' => 'bail|required|max:100',
+            'starts_at' => 'required',
             'description' => 'max:200'
         ]);
         $poll = new Poll();
         $poll->title = $request->title;
         $poll->description = $request->description;
         $poll->status = 1;
+        $poll->starts_at = $request->starts_at;
         $poll->closes_at = (empty($request->closes_at)) ? date('Y-m-d H:i:s', strtotime('+1 day', strtotime("today"))) : $request->closes_at;
+
 
         $poll->save();
 
@@ -52,7 +55,15 @@ class PollController extends Controller
         $poll = new Poll();
         $poll = Poll::find($id);
         $options = Option::where('poll_id', $id)->get();
+
         return view('edit', ['poll' => $poll, 'options' => $options]);
+    }
+
+    public function show($id)
+    {
+        $poll = Poll::find($id);
+        $options = Option::where('poll_id', $id)->get();
+        return view('show', ['poll' => $poll, 'options' => $options]);
     }
 
     public function update(Request $request)
@@ -78,7 +89,7 @@ class PollController extends Controller
             $option->poll_id = $poll->id;
             $option->save();
         }
-        
+
         return redirect('/');
     }
 

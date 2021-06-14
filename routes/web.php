@@ -21,6 +21,7 @@ Route::post('/poll/save', [PollController::class, 'store']);
 Route::post('/poll/save/{id}', [PollController::class, 'update']);
 Route::get('/poll/delete/{id}', [PollController::class, 'delete']);
 Route::get('/poll/find/{id}', [PollController::class, 'find']);
+Route::get('/poll/show/{id}', [PollController::class, 'show']);
 Route::get('/poll/close/{id}', [PollController::class, 'closePoll']);
 
 Route::get('/poll/vote/{id}', [VoteController::class, 'find']);

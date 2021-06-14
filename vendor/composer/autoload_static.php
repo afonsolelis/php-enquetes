@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
+class ComposerStaticInit73606f01780146c7631472acdefea11e
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -34,6 +34,7 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
@@ -93,6 +94,7 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
         ),
         'P' => 
         array (
+            'Pusher\\' => 7,
             'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
@@ -316,6 +318,10 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
+        'Pusher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
+        ),
         'Psy\\' => 
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
@@ -511,6 +517,7 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Events\\VoteCreated' => __DIR__ . '/../..' . '/app/Events/VoteCreated.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PollController' => __DIR__ . '/../..' . '/app/Http/Controllers/PollController.php',
@@ -4038,6 +4045,11 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
         'Psy\\VersionUpdater\\GitHubChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/GitHubChecker.php',
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
+        'Pusher\\Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Pusher.php',
+        'Pusher\\PusherCrypto' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherCrypto.php',
+        'Pusher\\PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherException.php',
+        'Pusher\\PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherInstance.php',
+        'Pusher\\Webhook' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Webhook.php',
         'Ramsey\\Collection\\AbstractArray' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractArray.php',
         'Ramsey\\Collection\\AbstractCollection' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractCollection.php',
         'Ramsey\\Collection\\AbstractSet' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractSet.php',
@@ -5271,10 +5283,10 @@ class ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit2102bdeb8547fbff4a5b4b4cededfd7f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit73606f01780146c7631472acdefea11e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit73606f01780146c7631472acdefea11e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit73606f01780146c7631472acdefea11e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit73606f01780146c7631472acdefea11e::$classMap;
 
         }, null, ClassLoader::class);
     }

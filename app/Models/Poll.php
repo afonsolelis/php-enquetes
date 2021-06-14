@@ -15,11 +15,16 @@ class Poll extends Model
         'title',
         'description',
         'closes_at',
+        'starts_at',
         'status'
     ];
 
     protected $hidden = [
         'deleted_at'
+    ];
+
+    protected $dates = [
+        'closes_at', 'starts_at'
     ];
 
     protected $casts = [
